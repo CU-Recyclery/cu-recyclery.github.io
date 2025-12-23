@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="main.html" class="logo">
+      <img src="images/CURecyclery_logo.JPG" alt="Logo" style="height: 100px; vertical-align: middle;"/>
+      <span style="font-size: 24px; font-weight: bold;">Clemson Recyclery</span>
+    </a>
+    <nav>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="donate.html" class="donate-btn">Donate</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+    <p>Have a question or feedback? Fill out the form below or email curecyclery@gmail.com!</p>
+    
+    <form action="mailto:curecyclery@email.com" method="POST" enctype="text/plain">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/ClemsonRecyclery/" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook" class="social-icon" style="height: 40px; vertical-align: middle; ">
+                    </a>
+                    <a href="https://www.instagram.com/curecyclery/" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram" class="social-icon" style="height: 40px; vertical-align: middle; ">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+            <h3>Useful Links</h3>
+            <a href="https://clemson.campuslabs.com/engage/organization/recyclery">Tiger Quest</a>
+            </div>
+            <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email: curecyclery@gmail.com</p>
+            <a href="https://www.flaticon.com/free-icons/essential-interface" title="essential interface icons">Essential interface icons created by Fantasyou - Flaticon</a>
+
+            </div>
+        </div>
+    </footer>
+<script src="scripts.js"></script>
+</body>
+</html>
