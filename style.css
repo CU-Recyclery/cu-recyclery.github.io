@@ -1,0 +1,211 @@
+/* =============================== */
+/* Clemson University Recyclery Website Stylesheet */
+/* =============================== */
+
+/* Remove default margin and set base font */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* -------------------------------
+   Header (Top Navbar)
+-------------------------------- */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  color: rgb(0, 0, 0);
+}
+
+/* Logo container (image + text) */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Slight zoom effect when hovering over the logo */
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* Logo image size and spacing */
+.logo img {
+  height: 100px;
+  margin-right: 10px;
+}
+
+/* Navigation links (in the header) */
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* -------------------------------
+   Main Content Area
+-------------------------------- */
+main {
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* -------------------------------
+   Contact Form
+-------------------------------- */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form label styling */
+label {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Input fields and textarea styling */
+input, textarea {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Submit button styling */
+button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #555;
+}
+
+/* -------------------------------
+   Footer Styling
+-------------------------------- */
+footer {
+  background-color: #d85e20; /* Clemson orange shade */
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
+/* Container for all footer sections */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Individual section in the footer */
+.footer-section {
+  flex: 1 1 250px;
+  margin: 10px 20px;
+}
+
+/* Footer section titles */
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #ffffff; /* white */
+}
+
+/* Footer links */
+.footer-section a {
+  display: block;
+  color: #ffddc8;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: transform 0.2s ease-in-out, color 0.2s;
+}
+
+/* Link hover effect in footer */
+.footer-section a:hover {
+  transform: scale(1.05);
+  color: white;
+}
+
+/* Paragraph text in footer */
+.footer-section p {
+  margin: 5px 0;
+  color: #ffddc8;
+}
+
+/* -------------------------------
+   Social Media Icons in Footer
+-------------------------------- */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Each icon inside the social section */
+.social-icon {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect for social icons */
+a:hover .social-icon {
+  transform: scale(1.2);
+}
+
+/* Donate link styled like an orange oval button */
+.donate-btn {
+  background-color: #d85e20;        /* Clemson orange */
+  color: rgb(0, 0, 0);
+  padding: 8px 16px;
+  border-radius: 999px;             /* makes it a pill shape */
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out, background-color 0.2s;
+}
+
+/* Inline gallery: spans full width but not full height */
+.inline-gallery {
+  position: relative;
+  width: 95%;
+  height: 500px; /* or adjust for your layout */
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery images as background */
+.inline-gallery .gallery-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Show active image */
+.inline-gallery .gallery-slide.active {
+  opacity: 1;
+}
